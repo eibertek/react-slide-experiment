@@ -9,10 +9,12 @@
     "react-dom": "^15.6.1",
     "react-slick": "^0.14.11",
     "react-slide": "^0.3.0",
+    "react-transition-group": "^2.2.0",
     "webpack": "^3.4.1"
   },
   "scripts": {
-    "deploy": "webpack"
+    "deploy": "webpack",
+    "start": "nodemon index"
   },
   "dependencies": {
     "express": "^4.15.3",
