@@ -1,0 +1,34 @@
+
+.animated {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+a.animated {
+ position:relative;
+ top:200px;
+ left:20px;
+ background-color: grey;
+}
+
+.animated.infinite {
+  animation-iteration-count: 1;
+}
+
+.animated.hinge {
+  animation-duration: 5s;
+}
+
+.animated.fadeIn {
+  animation-duration: 5s;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  transform-origin: center bottom;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
