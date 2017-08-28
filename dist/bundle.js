@@ -12556,7 +12556,11 @@ var SimpleSlider = function (_React$Component) {
     _this.previous = _this.previous.bind(_this);
     _this.state = {
       actualFrame: 1,
-      actualLink: ''
+      actualLink: _react2.default.createElement(
+        'a',
+        { key: '1', href: 'http://localhost:3000', className: 'animated fadeIn' },
+        'LINK 1'
+      )
     };
     return _this;
   }
@@ -12586,7 +12590,7 @@ var SimpleSlider = function (_React$Component) {
         afterChange: function afterChange(i) {
           _this2.setState({ actualLink: _react2.default.createElement(
               'a',
-              { key: i, className: 'animated fadeIn' },
+              { key: i, href: 'http://localhost:3000', className: 'animated fadeIn' },
               'LINK ',
               i
             ), actualFrame: i + 1 });
@@ -26460,7 +26464,7 @@ exports = module.exports = __webpack_require__(218)(undefined);
 
 
 // module
-exports.push([module.i, ".animated {\n  animation-duration: 5s;\n  animation-fill-mode: both; }\n\na.animated {\n  position: relative;\n  top: 200px;\n  left: 20px;\n  background-color: grey; }\n\n.animated.infinite {\n  animation-iteration-count: 1; }\n\n.animated.hinge {\n  animation-duration: 5s; }\n\n.animated.fadeIn {\n  animation-duration: 5s; }\n\n.fadeIn {\n  animation-name: fadeIn;\n  transform-origin: center bottom; }\n\n@-webkit-keyframes fadeIn {\n  from {\n    opacity: 0;\n    opacity: 1\\9;\n    /* IE9 only */ }\n  to {\n    opacity: 1; } }\n\n@-moz-keyframes fadeIn {\n  from {\n    opacity: 0;\n    opacity: 1\\9;\n    /* IE9 only */ }\n  to {\n    opacity: 1; } }\n\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n    opacity: 1\\9;\n    /* IE9 only */ }\n  to {\n    opacity: 1; } }\n", ""]);
+exports.push([module.i, ".animated {\n  animation-duration: 5s;\n  animation-fill-mode: both; }\n\na.animated {\n  position: absolute;\n  top: 350px;\n  margin-left: 20px;\n  background-color: grey;\n  font-family: 'Arial';\n  font-size: 20px;\n  width: 600px; }\n\na.animated:hover {\n  background-color: '#a0a0a0';\n  font-size: 22px; }\n\n.animated.infinite {\n  animation-iteration-count: 1; }\n\n.animated.hinge {\n  animation-duration: 5s; }\n\n.animated.fadeIn {\n  animation-duration: 5s; }\n\n.fadeIn {\n  animation-name: fadeIn;\n  transform-origin: center bottom; }\n\n@-webkit-keyframes fadeIn {\n  from {\n    opacity: 0;\n    opacity: 1\\9;\n    /* IE9 only */ }\n  to {\n    opacity: 1; } }\n\n@-moz-keyframes fadeIn {\n  from {\n    opacity: 0;\n    opacity: 1\\9;\n    /* IE9 only */ }\n  to {\n    opacity: 1; } }\n\n@keyframes fadeIn {\n  from {\n    opacity: 0;\n    opacity: 1\\9;\n    /* IE9 only */ }\n  to {\n    opacity: 1; } }\n", ""]);
 
 // exports
 

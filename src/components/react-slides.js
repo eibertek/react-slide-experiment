@@ -12,7 +12,7 @@ class SimpleSlider extends React.Component {
     this.previous = this.previous.bind(this)
     this.state = {
       actualFrame:1,
-      actualLink:''
+      actualLink:<a key="1" href="http://localhost:3000" className="animated fadeIn">LINK 1</a>
     }
   }
 
@@ -31,7 +31,7 @@ class SimpleSlider extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       afterChange: (i) =>{
-        this.setState({actualLink:<a key={i} className="animated fadeIn">LINK {i}</a>, actualFrame:i+1});
+        this.setState({actualLink:<a key={i} href="http://localhost:3000" className="animated fadeIn">LINK {i}</a>, actualFrame:i+1});
       }      
     };
     return (
