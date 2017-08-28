@@ -3,6 +3,8 @@ import {render} from 'react-dom';
 import Slider from 'react-slick';
 import ReactCSSTransitionGroup from 'react-transition-group';
 import styles from './styles.scss'; 
+import './slick.min.css'; 
+import './slick-theme.min.css'; 
 
 //const styles = {position: 'absolute', top:'200px', backgroundColor:'#e0e0e0', zIndex:99999};
 class SimpleSlider extends React.Component {

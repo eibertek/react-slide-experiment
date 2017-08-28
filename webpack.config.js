@@ -21,7 +21,15 @@ var config = {
         test : /\.scss?/,
         include : APP_DIR,
         loader : ['style-loader', 'css-loader', 'sass-loader']
-      }      
+      },
+      { test: /\.(woff|woff2|ttf|eot|svg|png|jpg|gif)(.*)?$/, 
+          loader: ['file-loader']
+      },      
+      {
+        test : /\.css?/,
+        include : APP_DIR,
+        loader : ['style-loader', 'css-loader']
+      },
     ]
   }  
 };
